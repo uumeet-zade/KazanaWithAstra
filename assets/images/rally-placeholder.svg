@@ -1,0 +1,13 @@
+<svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <rect width="600" height="400" fill="#220735" stroke="#8c263e" stroke-width="4"/>
+    <path d="M 0 400 L 150 200 L 300 350 L 450 150 L 600 400" fill="#8c263e" fill-opacity="0.4"/>
+    <circle cx="450" cy="150" r="40" fill="#ff2459" fill-opacity="0.6"/>
+    <circle cx="150" cy="200" r="30" fill="#ff2459" fill-opacity="0.4"/>
+    <circle cx="300" cy="350" r="20" fill="#ff2459" fill-opacity="0.2"/>
+    <text x="300" y="200" font-family="sans-serif" font-weight="bold" font-size="28" fill="#ffffff" text-anchor="middle" alignment-baseline="middle">
+        [CAMPAIGN RALLY]
+    </text>
+    <text x="300" y="240" font-family="sans-serif" font-size="18" fill="#e0e0e0" text-anchor="middle" alignment-baseline="middle">
+        Placeholder Event Image
+    </text>
+</svg>

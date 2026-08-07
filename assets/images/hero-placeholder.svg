@@ -1,0 +1,12 @@
+<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+    <rect width="400" height="500" fill="#220735" stroke="#ff2459" stroke-width="4"/>
+    <rect x="50" y="50" width="300" height="400" fill="#8c263e" fill-opacity="0.3" stroke="#ff2459" stroke-width="2"/>
+    <circle cx="200" cy="200" r="80" fill="#ff2459" fill-opacity="0.2"/>
+    <path d="M 120 380 L 280 380 L 250 150 L 150 150 Z" fill="#8c263e" fill-opacity="0.5"/>
+    <text x="200" y="280" font-family="sans-serif" font-weight="bold" font-size="24" fill="#ffffff" text-anchor="middle" alignment-baseline="middle">
+        [CANDIDATE PORTRAIT]
+    </text>
+    <text x="200" y="320" font-family="sans-serif" font-size="16" fill="#e0e0e0" text-anchor="middle" alignment-baseline="middle">
+        Placeholder Image
+    </text>
+</svg>
