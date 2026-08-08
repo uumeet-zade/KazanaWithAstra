@@ -497,8 +497,12 @@ blockquote {
         justify-content: center;
     }
     
-    .about-container, .events-container, .posters-container {
+    .about-container, .events-container {
         grid-template-columns: 1fr;
+    }
+    
+    .events-visual {
+        order: -1;
     }
     
     .footer-container {
