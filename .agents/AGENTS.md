@@ -13,7 +13,7 @@
 
 ## Context
 - **Lore**: Caprica (Country), Kazana (Region), 2062 Gubernatorial Elections.
-- **Candidate**: Astra Day.
+- **Candidate**: Astra Day (Incumbent Governor of Kazana since 2060).
 - **Party**: Kazana's Left (regional affiliation of the Rejuvenation Party).
 - **Ideology**: Left-Wing to Far-Left, Left-Wing Populism, Anti-Capitalism, Progressivism, Environmentalism, Decentralisation.
 

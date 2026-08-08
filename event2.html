@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Details - Kazana's Left</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./assets/images/kazanasleft.png">
+    <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="brand">
+                <a href="index.html" style="display: flex; align-items: center; gap: 0.5rem;">
+                    <img src="./assets/images/kazanasleft.png" alt="Kazana's Left Logo" class="logo">
+                    <span class="brand-text">ASTRA DAY 2062</span>
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html#platform" data-i18n="nav_platform">[Platform Placeholder]</a>
+                <a href="index.html#events" data-i18n="nav_events">[Events Placeholder]</a>
+                <a href="index.html#about" data-i18n="nav_about">[About Placeholder]</a>
+                <a href="index.html#get-involved" class="btn-primary" data-i18n="nav_involved">[Involved Placeholder]</a>
+                
+                <!-- Language Switcher -->
+                <div class="lang-switcher">
+                    <button id="lang-toggle" class="btn-secondary">
+                        <span id="current-lang">Alanian</span>
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="lang-dropdown" id="lang-dropdown">
+                        <button class="lang-option" data-lang="en">Alanian</button>
+                        <button class="lang-option" data-lang="fr">Gallic</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="section" style="padding-top: 150px; background: linear-gradient(135deg, var(--color-primary) 0%, #1a0528 100%); min-height: 40vh; display: flex; align-items: center;">
+        <div class="container" style="text-align: center;">
+            <div class="event-date" style="font-size: 1.2rem; margin-bottom: var(--spacing-md);" data-i18n="event2_page_date">[Event Date]</div>
+            <h1 class="glitch" style="font-size: 3rem;" data-text="[Event Title]" data-i18n="event2_page_title">[Event Title]</h1>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container story-container">
+            <div class="story-meta" style="margin-bottom: var(--spacing-lg); color: var(--color-accent); font-family: var(--font-heading); text-transform: uppercase; letter-spacing: 1px;">
+                <span data-i18n="event2_page_date">[Event Date]</span> | <span data-i18n="event2_page_location">[Event Location]</span>
+            </div>
+            
+            <div class="story-hero-image" style="margin-bottom: var(--spacing-xl);">
+                <img src="./assets/images/astracampaigning1.jpg" alt="Astra Day on the ground" class="campaign-photo" style="width: 100%;">
+            </div>
+            
+            <div class="story-content">
+                <p class="drop-cap" data-i18n="event2_p1">[Story Paragraph 1]</p>
+                <p data-i18n="event2_p2">[Story Paragraph 2]</p>
+                
+                <blockquote data-i18n="event2_quote">
+                    [A powerful pull-quote from the event...]
+                </blockquote>
+                
+                <p data-i18n="event2_p3">[Story Paragraph 3]</p>
+                <p data-i18n="event2_p4">[Story Paragraph 4]</p>
+                <p data-i18n="event2_p5">[Story Paragraph 5]</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <img src="./assets/images/kazanasleft.png" alt="Kazana's Left Logo" class="footer-logo">
+                <p class="brand-text">KAZANA'S LEFT</p>
+                <p class="footer-note" data-i18n="footer_note">[Footer Note Placeholder]</p>
+            </div>
+            <div class="footer-links">
+                <h4 data-i18n="footer_links_title">[Links Title]</h4>
+                <ul>
+                    <li><a href="index.html#platform" data-i18n="footer_link1">[Link 1]</a></li>
+                    <li><a href="#" data-i18n="footer_link2">[Link 2]</a></li>
+                    <li><a href="#" data-i18n="footer_link3">[Link 3]</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer_copyright">[Copyright Placeholder] 2062 Astra Day. Kazana Region, Caprica.</p>
+        </div>
+    </footer>
+
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>

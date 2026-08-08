@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200">
+    <rect width="800" height="1200" fill="#220735"/>
+    <rect x="20" y="20" width="760" height="1160" fill="none" stroke="#ff2459" stroke-width="10"/>
+    <text x="400" y="600" font-family="sans-serif" font-size="48" fill="#ffffff" text-anchor="middle">POSTER 1 PLACEHOLDER</text>
+    <text x="400" y="660" font-family="sans-serif" font-size="24" fill="#8c263e" text-anchor="middle">800x1200</text>
+</svg>

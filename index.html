@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./assets/images/kazanasleft.png">
     <link rel="stylesheet" href="./assets/css/index.css">
 </head>
 <body>
@@ -64,56 +65,69 @@
         <div class="container">
             <h2 class="section-title" data-i18n="platform_title">[Platform Title Placeholder]</h2>
             <div class="grid platform-grid">
-                <!-- Pillar 1 -->
+                <!-- Pillar 1: Sovereign Districts -->
                 <div class="card">
                     <div class="card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="#ff2459" stroke-width="2"><rect x="3" y="3" width="18" height="18"/></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#ff2459" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M4 12h16"/><path d="M12 4v16"/></svg>
                     </div>
                     <h3 data-i18n="pillar1_title">[Pillar 1 Title]</h3>
-                    <p data-i18n="pillar1_desc">[Pillar 1 Description Placeholder focusing on anti-capitalism or environmentalism]</p>
+                    <p data-i18n="pillar1_desc">[Pillar 1 Description]</p>
                 </div>
-                <!-- Pillar 2 -->
+                <!-- Pillar 2: Power to the Floor -->
                 <div class="card">
                     <div class="card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="#ff2459" stroke-width="2"><circle cx="12" cy="12" r="10"/></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#ff2459" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
                     </div>
                     <h3 data-i18n="pillar2_title">[Pillar 2 Title]</h3>
-                    <p data-i18n="pillar2_desc">[Pillar 2 Description Placeholder focusing on decentralisation]</p>
+                    <p data-i18n="pillar2_desc">[Pillar 2 Description]</p>
                 </div>
-                <!-- Pillar 3 -->
+                <!-- Pillar 3: The Land Answers to Kazana -->
                 <div class="card">
                     <div class="card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="#ff2459" stroke-width="2"><path d="M12 2L2 22h20L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#ff2459" stroke-width="2"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
                     </div>
                     <h3 data-i18n="pillar3_title">[Pillar 3 Title]</h3>
-                    <p data-i18n="pillar3_desc">[Pillar 3 Description Placeholder focusing on progressivism]</p>
+                    <p data-i18n="pillar3_desc">[Pillar 3 Description]</p>
+                </div>
+                <!-- Pillar 4: Nobody's Coming to Save You -->
+                <div class="card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#ff2459" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3 data-i18n="pillar4_title">[Pillar 4 Title]</h3>
+                    <p data-i18n="pillar4_desc">[Pillar 4 Description]</p>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="events" class="section events-section">
-        <div class="container">
-            <h2 class="section-title" data-i18n="events_title">[Events Title Placeholder]</h2>
-            <div class="grid platform-grid">
-                <!-- Event 1 -->
-                <div class="card event-card">
-                    <div class="event-date" data-i18n="event1_date">[Event 1 Date]</div>
-                    <h3 data-i18n="event1_title">[Event 1 Title]</h3>
-                    <p data-i18n="event1_desc">[Event 1 Description Placeholder: e.g., Local Market Visit]</p>
+        <div class="container events-container">
+            <div class="events-content">
+                <h2 class="section-title" data-i18n="events_title">[Events Title Placeholder]</h2>
+                <div class="grid event-list">
+                    <!-- Event 1 -->
+                    <a href="event1.html" class="card event-card">
+                        <div class="event-date" data-i18n="event1_date">[Event 1 Date]</div>
+                        <h3 data-i18n="event1_title">[Event 1 Title]</h3>
+                        <p data-i18n="event1_desc">[Event 1 Description Placeholder: e.g., Local Market Visit]</p>
+                    </a>
+                    <!-- Event 2 -->
+                    <a href="event2.html" class="card event-card">
+                        <div class="event-date" data-i18n="event2_date">[Event 2 Date]</div>
+                        <h3 data-i18n="event2_title">[Event 2 Title]</h3>
+                        <p data-i18n="event2_desc">[Event 2 Description Placeholder: e.g., Neighborhood Walk with citizens]</p>
+                    </a>
+                    <!-- Event 3 -->
+                    <a href="event3.html" class="card event-card">
+                        <div class="event-date" data-i18n="event3_date">[Event 3 Date]</div>
+                        <h3 data-i18n="event3_title">[Event 3 Title]</h3>
+                        <p data-i18n="event3_desc">[Event 3 Description Placeholder: e.g., Town Hall on Decentralisation]</p>
+                    </a>
                 </div>
-                <!-- Event 2 -->
-                <div class="card event-card">
-                    <div class="event-date" data-i18n="event2_date">[Event 2 Date]</div>
-                    <h3 data-i18n="event2_title">[Event 2 Title]</h3>
-                    <p data-i18n="event2_desc">[Event 2 Description Placeholder: e.g., Neighborhood Walk with citizens]</p>
-                </div>
-                <!-- Event 3 -->
-                <div class="card event-card">
-                    <div class="event-date" data-i18n="event3_date">[Event 3 Date]</div>
-                    <h3 data-i18n="event3_title">[Event 3 Title]</h3>
-                    <p data-i18n="event3_desc">[Event 3 Description Placeholder: e.g., Town Hall on Decentralisation]</p>
-                </div>
+            </div>
+            <div class="events-visual">
+                <img src="./assets/images/astragreetingcrowd.jpeg" alt="Astra Greeting Crowd" class="campaign-photo">
             </div>
         </div>
     </section>
@@ -121,13 +135,22 @@
     <section id="about" class="section about-section dark-bg">
         <div class="container about-container">
             <div class="about-visual">
-                <!-- SVG Placeholder -->
-                <img src="./assets/images/rally-placeholder.svg" alt="Campaign Rally Placeholder" class="placeholder-svg">
+                <img src="./assets/images/astracampaigning1.jpg" alt="Astra Day Campaigning" class="campaign-photo">
             </div>
             <div class="about-content">
                 <h2 class="section-title" data-i18n="about_title">[About Astra Day]</h2>
                 <p data-i18n="about_p1">[About Paragraph 1 Placeholder]</p>
                 <p data-i18n="about_p2">[About Paragraph 2 Placeholder]</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="posters" class="section posters-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="posters_title">[Posters Title Placeholder]</h2>
+            <div class="posters-container">
+                <img src="./assets/images/poster1-placeholder.svg" alt="Campaign Poster 1" class="campaign-poster">
+                <img src="./assets/images/poster2-placeholder.svg" alt="Campaign Poster 2" class="campaign-poster">
             </div>
         </div>
     </section>

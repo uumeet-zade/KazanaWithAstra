@@ -61,6 +61,17 @@ p {
     color: var(--color-text-muted);
 }
 
+blockquote {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-text);
+    border-left: 6px solid var(--color-accent);
+    padding: var(--spacing-md) var(--spacing-lg);
+    margin: var(--spacing-xl) 0;
+    background-color: rgba(255, 36, 89, 0.05);
+}
+
 /* Layout */
 .container {
     max-width: 1200px;
@@ -285,7 +296,7 @@ p {
     filter: drop-shadow(6px 6px 0px var(--color-text)) drop-shadow(12px 12px 0px var(--color-accent));
 }
 
-.placeholder-svg {
+.campaign-photo {
     max-width: 100%;
     height: auto;
     border: 2px solid var(--color-accent);
@@ -358,12 +369,72 @@ p {
     text-transform: uppercase;
 }
 
+.events-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+    align-items: center;
+}
+
+.event-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
 /* About Section */
 .about-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--spacing-xl);
     align-items: center;
+}
+
+/* Posters Section */
+.posters-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+    align-items: center;
+}
+
+.campaign-poster {
+    width: 100%;
+    height: auto;
+    border: 2px solid var(--color-accent);
+    box-shadow: 10px 10px 0px var(--color-secondary);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.campaign-poster:hover {
+    transform: translateY(-5px);
+    box-shadow: 15px 15px 0px var(--color-accent);
+}
+
+/* Story/Article Section (event.html) */
+.story-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.story-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.story-content p {
+    margin-bottom: var(--spacing-lg);
+}
+
+.drop-cap::first-letter {
+    font-family: var(--font-heading);
+    font-size: 4rem;
+    font-weight: 900;
+    color: var(--color-accent);
+    float: left;
+    line-height: 0.8;
+    margin-right: 0.5rem;
+    margin-top: 0.2rem;
 }
 
 /* Footer */
@@ -426,7 +497,7 @@ p {
         justify-content: center;
     }
     
-    .about-container {
+    .about-container, .events-container, .posters-container {
         grid-template-columns: 1fr;
     }
     
