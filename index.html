@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@700;900&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="./assets/images/kazanasleft.png">
+    <link rel="icon" type="image/png" href="./assets/images/kazanasleft.png?v=2">
+    <link rel="apple-touch-icon" href="./assets/images/kazanasleft.png?v=2">
     <link rel="stylesheet" href="./assets/css/index.css?v=3">
 </head>
 <body>
@@ -148,9 +149,18 @@
     <section id="posters" class="section posters-section">
         <div class="container">
             <h2 class="section-title" data-i18n="posters_title">[Posters Title Placeholder]</h2>
+            
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <a href="https://docs.google.com/document/d/1BaBdqsBiWlAEEh6qxlYdS6-axQI-unQOqCCkGGxHIuA/edit?usp=sharing" target="_blank" class="btn-primary" data-i18n="campaign_material_btn">THE FULL CAMPAIGNING MATERIAL (docx)</a>
+            </div>
+            
             <div class="posters-container">
-                <img src="./assets/images/poster1-placeholder.svg" alt="Campaign Poster 1" class="campaign-poster">
-                <img src="./assets/images/poster2-placeholder.svg" alt="Campaign Poster 2" class="campaign-poster">
+                <div class="lightbox-trigger" style="cursor: pointer;">
+                    <img src="./assets/images/poster1.png" alt="Campaign Poster 1" class="campaign-poster">
+                </div>
+                <div class="lightbox-trigger" style="cursor: pointer;">
+                    <img src="./assets/images/poster2.png" alt="Campaign Poster 2" class="campaign-poster">
+                </div>
             </div>
         </div>
     </section>
@@ -176,6 +186,12 @@
         </div>
     </footer>
 
-    <script src="./assets/js/index.js?v=3"></script>
+    <!-- Image Modal -->
+    <div id="image-modal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+
+    <script src="./assets/js/index.js?v=9"></script>
 </body>
 </html>

@@ -31,6 +31,7 @@ const translations = {
         about_p1: "Astra Day was born in the industrial heart of Kazana. Having witnessed firsthand the destruction caused by unchecked capitalism and environmental negligence, she dedicated her life to organizing labor movements and climate protests.",
         about_p2: "Serving as the Governor of Kazana since 2060, Astra represents a fundamental break from Caprica's corrupt political establishment. She continues to stand firmly with the working class, ready to expand our fight for a decentralized, green, and equitable future.",
         posters_title: "Campaign Posters",
+        campaign_material_btn: "THE FULL CAMPAIGNING MATERIAL (docx)",
         footer_note: "Paid for by Kazana's Left, regional affiliate of the Rejuvenation Party.",
         footer_links_title: "Quick Links",
         footer_link1: "Manifesto",
@@ -100,6 +101,7 @@ const translations = {
         about_p1: "Astra Day est née dans le cœur industriel de Kazana. Ayant été témoin de première main de la destruction causée par un capitalisme incontrôlé et la négligence environnementale, elle a consacré sa vie à organiser les mouvements syndicaux et les manifestations pour le climat.",
         about_p2: "En tant que Gouverneure de Kazana depuis 2060, Astra représente une rupture fondamentale avec l'establishment politique corrompu de Caprica. Elle continue de se tenir fermement aux côtés de la classe ouvrière, prête à intensifier notre lutte pour un avenir décentralisé, écologique et équitable.",
         posters_title: "Affiches de Campagne",
+        campaign_material_btn: "LE MATÉRIEL COMPLET DE CAMPAGNE (docx)",
         footer_note: "Financé par la Gauche de Kazana, section régionale du Parti du Renouveau.",
         footer_links_title: "Liens Rapides",
         footer_link1: "Manifeste",
@@ -194,6 +196,44 @@ document.addEventListener('DOMContentLoaded', () => {
                 updateLanguage();
                 langDropdown.classList.remove('show');
             });
+        });
+    }
+
+    // Lightbox Modal Logic
+    const modal = document.getElementById("image-modal");
+    const modalImg = document.getElementById("modal-img");
+    const closeBtn = document.querySelector(".close-modal");
+    const triggers = document.querySelectorAll(".lightbox-trigger img");
+
+    if (modal && modalImg && closeBtn) {
+        triggers.forEach(img => {
+            img.parentElement.addEventListener("click", function() {
+                modal.style.display = "flex";
+                modalImg.src = img.src;
+                document.body.style.overflow = "hidden"; // Prevent scrolling
+            });
+        });
+
+        // Close when clicking the X
+        closeBtn.addEventListener("click", function() {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto";
+        });
+
+        // Close when clicking outside the image
+        modal.addEventListener("click", function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+                document.body.style.overflow = "auto";
+            }
+        });
+        
+        // Close on escape key
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "Escape" && modal.style.display === "flex") {
+                modal.style.display = "none";
+                document.body.style.overflow = "auto";
+            }
         });
     }
 });
