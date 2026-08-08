@@ -175,8 +175,7 @@ function updateLanguage() {
     });
 }
 
-// Initialize
-document.addEventListener('DOMContentLoaded', () => {
+function init() {
     updateLanguage();
 
     const langToggle = document.getElementById('lang-toggle');
@@ -244,4 +243,11 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-});
+}
+
+// Bulletproof initialization
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+} else {
+    init();
+}
