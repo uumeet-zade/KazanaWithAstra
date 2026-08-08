@@ -142,7 +142,13 @@ const translations = {
 };
 
 function updateLanguage() {
-    const lang = localStorage.getItem('lang') || 'en';
+    let lang = 'en';
+    try {
+        lang = localStorage.getItem('lang') || 'en';
+    } catch (e) {
+        console.warn('localStorage access denied, defaulting to en');
+    }
+    
     document.documentElement.lang = lang;
     
     // Update active state in dropdown
@@ -192,7 +198,9 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('.lang-option').forEach(btn => {
             btn.addEventListener('click', (e) => {
                 const newLang = e.target.dataset.lang;
-                localStorage.setItem('lang', newLang);
+                try {
+                    localStorage.setItem('lang', newLang);
+                } catch (err) {}
                 updateLanguage();
                 langDropdown.classList.remove('show');
             });
